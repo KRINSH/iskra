@@ -202,7 +202,7 @@ p { margin: 0; }
 .feature.big { grid-column: span 3; }
 .feature .media { aspect-ratio: 4 / 3; background: var(--bg-2); border-bottom: 1px solid var(--border); overflow: hidden; }
 .feature.big .media { aspect-ratio: 16 / 10; }
-.feature .media img { width: 100%; height: 100%; object-fit: cover; }
+.feature .media img, .feature .media video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .feature .media.shot img { width: 175%; max-width: none; height: auto; margin-left: -24%; object-fit: initial; }
 .feature .body { padding: 22px 24px 26px; }
 .feature h3 { font-size: 20px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -214,6 +214,13 @@ p { margin: 0; }
 }
 .tag-pro { background: var(--accent-soft); color: var(--accent-ink); }
 .tag-free { background: var(--surface-2); color: var(--muted); }
+
+/* ---------------------------------------------------------------- gallery */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery img {
+  width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover;
+  border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-2);
+}
 
 /* ------------------------------------------------------------------ steps */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; counter-reset: step; }
@@ -344,6 +351,7 @@ code.cmd {
   .feature, .feature.big { grid-column: span 3; }
   .features { grid-template-columns: repeat(6, 1fr); }
   .reqs { grid-template-columns: 1fr 1fr; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
   .reqs .req:last-child { grid-column: span 2; }
 }
 @media (max-width: 760px) {
@@ -353,6 +361,8 @@ code.cmd {
   .section { padding-top: 84px; }
   .section-head { margin-bottom: 36px; }
   .features, .steps, .pricing, .reqs { grid-template-columns: 1fr; }
+  .gallery { gap: 10px; }
+  .gallery img { border-radius: var(--radius); }
   .feature, .feature.big, .reqs .req:last-child { grid-column: auto; }
   .feature.big .media { aspect-ratio: 4 / 3; }
   .activate { grid-template-columns: 1fr; }

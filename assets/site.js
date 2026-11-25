@@ -6,3 +6,19 @@
   on();
   window.addEventListener('scroll', on, { passive: true });
 })();
+
+// Respect reduced motion: don't autoplay the looping feature video.
+(function () {
+  if (!window.matchMedia) return;
+  var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var apply = function () {
+    if (!mq.matches) return;
+    var vids = document.querySelectorAll('video[autoplay]');
+    for (var i = 0; i < vids.length; i++) {
+      vids[i].removeAttribute('autoplay');
+      vids[i].pause();
+    }
+  };
+  apply();
+  if (mq.addEventListener) mq.addEventListener('change', apply);
+})();
