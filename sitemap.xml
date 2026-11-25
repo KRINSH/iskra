@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://krinsh.github.io/iskra/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krinsh.github.io/iskra/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://krinsh.github.io/iskra/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://krinsh.github.io/iskra/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krinsh.github.io/iskra/"/>
+  </url>
+  <url>
+    <loc>https://krinsh.github.io/iskra/uk/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krinsh.github.io/iskra/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://krinsh.github.io/iskra/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://krinsh.github.io/iskra/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krinsh.github.io/iskra/"/>
+  </url>
+  <url>
+    <loc>https://krinsh.github.io/iskra/ru/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://krinsh.github.io/iskra/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://krinsh.github.io/iskra/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://krinsh.github.io/iskra/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://krinsh.github.io/iskra/"/>
+  </url>
+</urlset>

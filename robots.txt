@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://krinsh.github.io/iskra/sitemap.xml
